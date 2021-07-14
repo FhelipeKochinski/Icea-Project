@@ -1,0 +1,215 @@
+/*********************************************
+** Home 
+*********************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*Banner Topo */
+
+#bannerInicial {
+    float: left;
+    width: 100%;
+}
+
+#bannerInicial .boxBannerTopo {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+#bannerInicial .boxBannerTopo figure {
+    float: left;
+    width: 100%;
+}
+
+#bannerInicial .boxLinks {
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    z-index: 10;
+    position: absolute;
+}
+
+#bannerInicial .bannerTopMobile {
+    display: none;
+}
+
+/* Texto conteudo */
+
+#conteudoPagina {
+    float: left;
+    width: 100%;
+}
+
+p {
+    color: #BDBDBD;
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 19px;
+    margin: 25px 0 25px 0;
+}
+
+#tituloContent {
+    color: #415364;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+#conteudoPagina .container .boxConteudo .col-sm-6 {
+    margin-top: 20px;
+}
+
+/* Button's Conteudo */
+
+#conteudoPagina .divBtn {
+    padding-top: 10px;
+}
+
+#conteudoPagina #btnConteudo {
+    display: inline-block;
+    color: white;
+    background-color: #AB1431;
+    border-radius: 550px;
+    text-transform: uppercase;
+    padding: 12px 50px;
+    margin: 7px 10px;
+}
+
+/* Button's Banner Topo */
+
+#bannerInicial .divBtnTop {
+    padding-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bannerInicial #btnTop {
+    display: inline-block;
+    color: white;
+    background-color: #AB1431;
+    border-radius: 550px;
+    text-transform: uppercase;
+    padding: 12px 50px;
+    margin: 0 10px 20px 0;
+}
+
+/* Promoções */
+
+#conteudoPagina .boxPromocoes {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Imagem Principal */
+
+.boxConteudo {
+    padding-top: 20px;
+}
+
+/* Banner's / Botões Baixo */
+
+#bannerBaixo {
+    float: left;
+    width: 100%;
+}
+
+#bannerBaixo .boxBannerBaixo {
+    position: relative;
+    margin-bottom: 15px;
+    float: left;
+    width: 100%;
+}
+
+#bannerBaixo .boxBannerBaixo figure {
+    float: left;
+    width: 100%;
+}
+
+#bannerBaixo .bannerBaixoMobile {
+    display: none;
+}
+
+#bannerBaixo .divBtnBaixo {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+#bannerBaixo #btnBaixo {
+    display: inline-block;
+    color: white;
+    background-color: #AB1431;
+    border-radius: 550px;
+    text-transform: uppercase;
+    padding: 12px 50px;
+    margin: 7px 10px;
+}
+
+#bannerBaixo .boxLinks {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    z-index: 10;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+
+    /*Banner Inicial */
+    #bannerInicial .bannerTopMobile {
+        display: block;
+    }
+
+    #bannerInicial .bannerTopDesktop {
+        display: none;
+    }
+
+    /*Banner Baixo*/
+    #bannerBaixo{
+        float: left;
+        width: 100%;
+    }
+
+    #bannerBaixo .bannerBaixoMobile {
+        float: left;
+        width: 100%;
+        display: block;
+    }
+
+    #bannerBaixo .bannerBaixoDesktop {
+        display: none;
+    }
+
+    /* Conteudo */
+    #conteudoPagina .boxConteudo .col-sm-6 {
+        padding-bottom: 25px;
+    }
+
+    
+    /* Botões Top */
+    #bannerInicial #btnTop {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    /* Botões Conteúdo */
+    #conteudoPagina #btnConteudo {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    /* Botões Baixo */
+    #bannerBaixo #btnBaixo {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+}

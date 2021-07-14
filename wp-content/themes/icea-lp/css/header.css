@@ -1,0 +1,159 @@
+/*********************************************
+** Header 
+*********************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/*Cabeçalho Topo*/
+
+.nav-top {
+    background-color: white;
+    float: left;
+    width: 100%;
+    height: 37px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#cabecalhoTopo {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 9px;
+}
+
+#cabecalhoTopo .linkHeader a{
+    color: #415364;
+}
+
+.menu ul {
+    display:inline-block;
+    list-style: none;
+}
+.linkHeader {
+    padding-left: 15px;
+}
+
+/* Menu Principal */
+
+.topHeader {
+    float: left;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: #F2F2F2;
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+
+.topHeader .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.topHeader #menuPrincipal {
+    flex: 1;
+    text-align: right;
+}
+
+.topHeader #menuPrincipal li {
+    list-style: none;
+    display: inline-block;
+    padding: 7px;
+}
+
+.topHeader #menuPrincipal ul li a {
+    color: #656565;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.topHeader #menuPrincipal ul li a:hover {
+    color: black;
+}
+
+/* Fecha menu */
+
+#header #fechaMenuMobile{
+    display: none;
+}
+
+/* Menu Mobile */
+
+#menuMobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    /* Top Header */
+    #cabecalhoTopo .linkHeader.email {
+        display: none;
+    }
+
+    /* Logo */
+
+    #logo img {
+        max-width: 60%!important;
+    }
+
+	/*Menu Mobile */
+    #header .topHeader #menuMobile {
+        cursor: pointer;
+        display: block;
+    }
+
+    #header .topHeader #menuMobile i{
+		font-size: 30px;
+    	color: #AB1431;
+	}
+
+    /* Cabeçalho Topo */
+    .nav-top {
+        display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    /* Menu Principal */
+    #header #menuPrincipal {
+        position: fixed;
+		top: 0;
+		right: -500px;
+		bottom: 0;
+        background-color: #AB1431;
+		z-index: 99;
+		width: 300px;
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+		padding: 20px 10px;
+		transition: all 0.2s linear;
+    }
+
+    #header #menuPrincipal.active {
+        right: 0;
+    }
+
+    #header #menuPrincipal #fechaMenuMobile {
+        display: block;
+        float: right;
+        width: 40px;
+    }
+
+    .topHeader #menuPrincipal li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #header #menuPrincipal #menu-menu-principal {
+        padding-left: 8px;
+    }
+
+    .topHeader #menuPrincipal ul li a {
+        color: white;
+    }
+
+}
